@@ -10,6 +10,7 @@
 
 ## EDA
 * chart the number of articles on the frontpage over the course of a year
+* maybe some clustering stuff??
 
 # TASK: Apply connectionist machine learning to a new dataset
 

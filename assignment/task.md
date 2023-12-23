@@ -1,4 +1,17 @@
-# Apply connectionist machine learning to a new dataset:
+# Ideas what we could analyze for _standard.at_
+## Machine Learning
+* predict the number of comments an article is going to generate
+* try to infer storylabels for articles that don't have any
+* nlp processing of articles and comments
+    * sentiment analysis of comments or articles
+    * maybe a tiny llm trained on standard articles?
+        * given a title, write a derstandard.at article
+* look at the troll thing?
+
+## EDA
+* chart the number of articles on the frontpage over the course of a year
+
+# TASK: Apply connectionist machine learning to a new dataset
 
 -   Find another dataset e.g. on the UCI Machine Learning website
     https://archive.ics.uci.edu/ml/index.php

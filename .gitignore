@@ -8,3 +8,9 @@
 # my messy interactive python files, which will be converted to notebooks anyways
 /assignment/standard_scraper.py
 /assignment/ml_analysis.py
+
+# Profiling data goes here
+/assignment/runs
+
+# testing script
+/assignment/gpu_test.py

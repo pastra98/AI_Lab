@@ -30,8 +30,9 @@ download link, which contains everything needed to run the notebook.
 However some of the cells took very long to run, and the notebooks require packages
 that you may need to install (pyarrow, spacy). For embeddings we also used a large
 spacy model (500 MB). For your convenience, we have concatenated all notebooks into
-a single pdf (all_notebooks.pdf). But the code should definitely also execute once
-all dependencies are installed along with the data.
+a single pdf (all_notebooks.pdf). We also included /html_nbs directory, where the html
+of each notebook is stored. But the code should definitely also execute once
+all dependencies are installed along with the data. 
 
 Happy new year,
 

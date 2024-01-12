@@ -21,6 +21,9 @@ have decided to split up our project into three notebooks:
     for a machine learning pipeline.
 3. `machine_learning:` Here we train various regression networks on our data, evaluate
     them on a test set and also some real data which can be fetched for any given day.
+4. `text_processing_classification_models:` Here, the text data is processed and used as input to
+   classification models. We try to predict if number of comments is large or small (binary classification) based on the title and subtitle,
+   and what is the *kicker* or *storylabel* (multi-class classification) based on the same inputs. We had to do the text_processing separately as this notebook was run on Richard's computer, which would crash when working    with the large model
 
 As you can see, the data we have produced is quite large, which is why we have not
 included it in the repository. You may use

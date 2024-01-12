@@ -10,7 +10,7 @@ a machine learning project: predicting the number of posts a given article will 
 based on the headline, subtitle and time-data.
 
 As the scraping and data processing involved a lot of steps in their own right, we
-have decided to split up our project into three notebooks:
+have decided to split up our project into 3 notebooks:
 1. `data_scraping:` Here we explore the page structure of derstandard.at frontpage,
     using beautifulsoup to extract the data we are interested in. The notebook concludes
     with producing a csv file `4yrs_derstandard_frontpage_data.csv` that is 57 MB of
@@ -21,9 +21,6 @@ have decided to split up our project into three notebooks:
     for a machine learning pipeline.
 3. `machine_learning:` Here we train various regression networks on our data, evaluate
     them on a test set and also some real data which can be fetched for any given day.
-4. `text_processing_classification_models:` Here, the text data is processed and used as input to
-   classification models. We try to predict if number of comments is large or small (binary classification) based on the title and subtitle,
-   and what is the *kicker* or *storylabel* (multi-class classification) based on the same inputs. We had to do the text_processing separately as this notebook was run on Richard's computer, which would crash when working    with the large model
 
 As you can see, the data we have produced is quite large, which is why we have not
 included it in the repository. You may use
@@ -33,9 +30,22 @@ download link, which contains everything needed to run the notebook.
 However some of the cells took very long to run, and the notebooks require packages
 that you may need to install (pyarrow, spacy). For embeddings we also used a large
 spacy model (500 MB). For your convenience, we have concatenated all notebooks into
-a single pdf (all_notebooks.pdf). We also included /html_nbs directory, where the html
+a single pdf (`all_notebooks.pdf`). We also included /html_nbs directory, where the html
 of each notebook is stored. But the code should definitely also execute once
 all dependencies are installed along with the data. 
+
+Additionally, we have performed some classification tests as well. This work includes
+some separate processing , and is contained in the 4th notebook:
+
+4. `text_processing_classification_models:` Here, the text data is processed
+   and used as input to classification models. We try to predict if number
+   of comments is large or small (binary classification) based on the title
+   and subtitle, and what is the *kicker* or *storylabel* (multi-class classification)
+   based on the same inputs. We had to do the text_processing separately
+   as this notebook was run on Richard's computer, which would crash when
+   working with the large model.
+
+The results of this notebook are also appended to `all_notebooks.pdf`.
 
 Happy new year,
 
@@ -44,3 +54,13 @@ Paul & Risko
   *Disclaimer: We did not get any permission from derstandard.at to perform this*
   *scraping. As this is only for this university project and the scraped data will not be shared*
   *elsewhere, we hope to not get into any legal trouble because of our scraping - thank you :^)*
+
+---
+References used:
+* http://mitloehner.com/lehre/dsai1/
+* https://pytorch.org/docs/stable/nn.html
+* https://spacy.io/models/de
+* https://stackoverflow.blog/2023/11/09/an-intuitive-introduction-to-text-embeddings/
+* https://en.wikipedia.org/wiki/Word2vec
+* (3b1b on neural networks)[https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi]
+* https://machinelearningmastery.com/develop-your-first-neural-network-with-pytorch-step-by-step/

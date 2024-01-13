@@ -1,16 +1,5 @@
 # course content not to be included in the repo
-/mitloehner_nbs
+/lecture_notebooks
 /polleres_stuff
 
-# put raw html for analysis here
-/assignment/standard_downloads
-
-# my messy interactive python files, which will be converted to notebooks anyways
-/assignment/standard_scraper.py
-/assignment/ml_analysis.py
-
-# Profiling data goes here
-/assignment/runs
-
-# testing script
-/assignment/gpu_test.py
+assignments/2_assignment_standard_ml/data

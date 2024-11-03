@@ -7482,7 +7482,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Scraping-derstandard.at">Scraping <em>derstandard.at</em><a class="anchor-link" href="#Scraping-derstandard.at">¶</a></h1><p><strong>TODO:</strong> talk about some legal stuff with scraping</p>
+<h1 id="Scraping-derstandard.at">Scraping <em>derstandard.at</em><a class="anchor-link" href="#Scraping-derstandard.at">¶</a></h1>
 <p>First we define the function <code>get_standard_soup()</code>, which sends a request to derstandard, along with a cookie that derstandard checks if a user has accepted their DSGVO notice. If this cookie is not sent, a banner is displayed and the html is only partially loaded.</p>
 <p>Secondly, we define <code>get_frontpage_articles()</code>, which expects a bs4 soup object of a frontpage. While derstandard no longer offers an archive, the frontpage articles of a given day can be conveniently accessed with the pattern <code>frontpage/y/m/d</code>. Each frontpage contains article sections which contain the (sub)heading, lead, number of comments, storylabels etc.</p>
 <p>We will start by pulling the frontpage of december 22th 2023.</p>

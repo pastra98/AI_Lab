@@ -20,7 +20,6 @@ As the scraping and data processing involved a lot of steps in their own right, 
 3. `machine_learning:` Here we train various regression networks on our data, evaluate
     them on a test set and also some real data which can be fetched for any given day.
 
-we have concatenated all notebooks into a single pdf (`all_notebooks.pdf`).
 We also included /html_nbs directory, where the html of each notebook is stored.
 
 Additionally, we have performed some classification tests as well. This work includes
